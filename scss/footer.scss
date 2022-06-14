@@ -1,0 +1,16 @@
+.foot{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0px;
+    background-color: gray;
+    .logos{
+        margin-top: 1rem;
+        .logo{
+            padding: 0.3rem;
+            background-color: rgb(68, 187, 223);
+            border-radius: 5px;
+            color: white;
+        }
+    }
+}

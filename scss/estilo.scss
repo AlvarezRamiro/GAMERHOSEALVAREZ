@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fantasy
+}
+
+@import "header";
+@import "main";
+@import "card";
+@import "footer";
+
+.titulo{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: orangered;
+    margin-bottom: 2rem;
+}
