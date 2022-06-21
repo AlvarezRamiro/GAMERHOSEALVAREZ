@@ -102,3 +102,70 @@ h3{
                             grid-template-areas: card8;
                             }
                         }
+
+@media screen and (max-width: 320px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "card" 
+        "card1" 
+        "card2"
+        ;
+        text-align: center;
+        justify-content: center;
+        row-gap: 1rem;
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 1rem;
+    }
+        .cards1{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "card3" 
+            "card4" 
+            "card5"
+            ;
+            text-align: center;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 80%;
+            margin-left: 10%;
+            padding-bottom: 1rem;
+        }
+        .cards2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "card6" 
+            "card7" 
+            "card8"
+            ;
+            text-align: center;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 80%;
+            margin-left: 10%;
+            padding-bottom: 1rem;
+        }
+        
+        @mixin cardproductos {
+            line-height: 25px;
+                img{
+                    width: 100%;
+                    &:hover{
+                        padding: 0,5rem;
+                    }
+                }
+                width: 50px;
+                
+                background-color: aqua;
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        }
+    

@@ -7,9 +7,7 @@
     ;
     text-align: center;
     justify-content: center;
-    margin-left: 3.5rem;
-    padding-bottom: 6rem;
-    
+   width: 100%;
 
     @mixin cardindex {
         line-height: 25px;
@@ -53,48 +51,24 @@
         text-align: center;
         justify-content: center;
         row-gap: 1rem;
-        card11{
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 1rem;
+        
+        @mixin cardindex {
             line-height: 25px;
-            img{
-                width: 200px;
-                &:hover{
-                    padding: 1rem;
+                img{
+                    width: 100%;
+                    &:hover{
+                        padding: 0,5rem;
+                    }
                 }
-            }
-            width: 100%;
-            background-color: aqua;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            grid-template-areas: card;
-            }
-        .card22{
-            line-height: 25px;
-            img{
-                width: 200px;
-                &:hover{
-                    padding: 1rem;
-                }
-            }
-            width: 100%;
-            background-color: aqua;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            grid-template-areas: card1;
-            }
-        .card33{
-            line-height: 25px;
-            img{
-                width: 200px;
-                &:hover{
-                    padding: 1rem;
-                }
-            }
-            width: 100%;
-            background-color: aqua;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            grid-template-areas: card2;
-            }
+                width: 50px;
+                
+                background-color: aqua;
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
         }
     
 }

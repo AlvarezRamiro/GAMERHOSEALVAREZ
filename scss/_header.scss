@@ -8,9 +8,27 @@ header{
                     flex-direction: row;
                     justify-content: center;
                     gap: 1rem;
-                        .boton{
+                        .boton1{
                             padding: 10px;
                             margin: 10px;
+                        }
+                            .boton2{
+                                padding: 10px;
+                                margin: 10px;
+                            }
+                                .boton3{
+                                    padding: 10px;
+                                    margin: 10px;
+                                }
+                                    .boton4{
+                                        padding: 10px;
+                                        margin: 10px;
+                                    }
+                                        .boton5{
+                                            padding: 10px;
+                                            margin: 10px;
+                                        }
+                                            
                                 &:hover{
                                     background-color: rgba(253, 119, 51, 0.188);
                                     border-radius: 15%;
@@ -26,4 +44,72 @@ header{
                         }
                 }
         }
+    
+        @mixin boton {
+            font-size: 1rem;
+                         &:hover{
+                        background-color: rgba(253, 119, 51, 0.188);
+                        border-radius: 15%;
+                        }
+                    }
+
+    @media screen and (max-width: 320px){
+
+        header{
+            .nav{
+                width: 100%;
+                background-color: gray;
+                .menu{
+                    line-height: 0%;
+                        list-style-type: none;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(5,2rem);
+                        grid-template-areas:
+                         "btn1 
+                          btn2
+                          btn3
+                          btn4
+                          btn5"
+                         ;
+                        justify-content: center;
+                        
+                        text-align: center;
+
+                        .boton1{
+                            @include boton;
+                            grid-template-areas: btn1;
+                        }
+                        .boton2{
+                            @include boton;
+                            grid-template-areas: btn2;
+                        }
+                        .boton3{
+                            @include boton;
+                            grid-template-areas: btn3;
+                        }
+                        .boton4{
+                            @include boton;
+                            grid-template-areas: btn4;
+                        }
+                        .boton5{
+                            @include boton;
+                            grid-template-areas: btn5;
+                        }
+
+                    
+                            
+                                a{
+                                    text-decoration: none;
+                                    color: white;
+                                    &:hover{
+                                        color: orangered;
+                                        font-weight: bold;
+                                    }
+                                }
+                            
+                    }
+            }
+        }
+    
     }
