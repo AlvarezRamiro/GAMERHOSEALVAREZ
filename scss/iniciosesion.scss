@@ -1,0 +1,35 @@
+.formularios{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "form1 form2";
+    justify-content: center;
+    margin-bottom: 4rem;
+    form{
+        div{
+            .formcontacto1{
+                width: 200px;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    line-height: 2rem;
+    grid-area:from1 ;
+    margin-left: 300px;
+               
+            }
+        }
+    }
+    .formcontacto2{
+        width: 200px;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-left: 50px;
+grid-area:form2 ;
+    }
+}

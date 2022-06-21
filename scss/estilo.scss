@@ -12,8 +12,19 @@ body{
 @import "main";
 @import "card";
 @import "footer";
+@import "productos";
+@import "pcarmada";
+@import "iniciosesion";
+@import "contacto";
 
 .titulo{
+    text-align: center;
+    padding: 1rem;
+    color: orangered;
+    margin-bottom: 2rem;
+}
+
+.titulogeneral{
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;

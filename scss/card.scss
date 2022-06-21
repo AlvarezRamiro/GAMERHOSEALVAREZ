@@ -10,8 +10,9 @@
     margin-left: 3.5rem;
     padding-bottom: 6rem;
     
-        .card11{
-            line-height: 25px;
+
+    @mixin cardindex {
+        line-height: 25px;
             img{
                 width: 200px;
                 &:hover{
@@ -23,36 +24,17 @@
             background-color: aqua;
             border-radius: 15px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+        .card11{
+            @include cardindex;
             grid-template-areas: card;
             }
         .card22{
-            line-height: 25px;
-            img{
-                width: 200px;
-                &:hover{
-                    padding: 1rem;
-                }
-            }
-            width: 300px;
-            padding: 1rem;
-            background-color: aqua;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            @include cardindex;
             grid-template-areas: card1;
             }
         .card33{
-            line-height: 25px;
-            img{
-                width: 200px;
-                &:hover{
-                    padding: 1rem;
-                }
-            }
-            width: 300px;
-            padding: 1rem;
-            background-color: aqua;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            @include cardindex;
             grid-template-areas: card2;
             }
         }
