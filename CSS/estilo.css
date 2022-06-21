@@ -107,14 +107,16 @@ main img {
   grid-template-areas: "card card1 card2";
   text-align: center;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 4rem; }
   .cards11 .card11 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card; }
     .cards11 .card11 img {
       width: 200px; }
@@ -122,11 +124,12 @@ main img {
         padding: 1rem; }
   .cards11 .card22 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card1; }
     .cards11 .card22 img {
       width: 200px; }
@@ -134,11 +137,12 @@ main img {
         padding: 1rem; }
   .cards11 .card33 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card2; }
     .cards11 .card33 img {
       width: 200px; }
@@ -154,9 +158,10 @@ main img {
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
-    width: 80%;
-    margin-left: 10%;
-    padding-bottom: 1rem; } }
+    width: 100%;
+    padding-bottom: 1rem; }
+  .img1 {
+    height: 150px; } }
 
 .foot {
   display: grid;
@@ -358,15 +363,15 @@ h3 {
   grid-template-areas: "card111 card222 card333";
   text-align: center;
   justify-content: center;
-  margin-left: 3.5rem;
-  padding-bottom: 6rem; }
+  width: 100%; }
   .cards111 .card111 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card111; }
     .cards111 .card111 img {
       width: 200px; }
@@ -374,11 +379,12 @@ h3 {
         padding: 1rem; }
   .cards111 .card222 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card222; }
     .cards111 .card222 img {
       width: 200px; }
@@ -386,11 +392,12 @@ h3 {
         padding: 1rem; }
   .cards111 .card333 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
     background-color: aqua;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card333; }
     .cards111 .card333 img {
       width: 200px; }
@@ -406,8 +413,7 @@ h3 {
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
     padding-bottom: 1rem; } }
 
 .formularios {
@@ -466,15 +472,19 @@ h3 {
       line-height: 1.5rem;
       grid-area: form2; } }
 
-.contactodiv .form3 {
-  margin-top: 3rem;
-  width: 350px;
-  padding: 1rem;
-  background-color: aqua;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  text-align: center;
-  margin-bottom: 4rem; }
+.contactodiv {
+  width: 100%; }
+  .contactodiv .form3 {
+    margin-top: 3rem;
+    width: 32%;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin-bottom: 4rem;
+    align-items: center;
+    margin-left: 34%; }
 
 @media screen and (max-width: 320px) {
   .contactodiv {
@@ -508,3 +518,9 @@ h3 {
   font-size: 1.5rem;
   color: orangered;
   margin-bottom: 2rem; }
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #009c9c;
+  border-radius: 5px; }
