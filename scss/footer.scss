@@ -1,16 +1,73 @@
 .foot{
-    display: grid;
+    display: flex;
     width: 100%;
-    justify-content: center;
     padding: 2rem 0px;
     background-color: gray;
     .logos{
-        margin-top: 1rem;
+        width: 30%;
+        margin-left: 20%;
+        
         .logo{
-            padding: 0.3rem;
-            background-color: rgb(68, 187, 223);
+             
+            padding: 0.5rem;
+            background-color: rgba(30, 148, 148, 0.514);
             border-radius: 5px;
             color: white;
+            margin-left: 10px;
+            &:hover{
+                color: orangered;
+            }
+        }
+    }
+    div{
+        p{
+           
+            color: white;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "logo" 
+        "c" 
+        ;
+        width: 100%;
+        row-gap: 2rem;
+        background-color: gray;
+        .logos{
+            display: flex;
+            width: 100%;
+            
+            
+            .logo{
+                 
+                padding: 0.5rem;
+                background-color: rgba(30, 148, 148, 0.514);
+                border-radius: 5px;
+                color: white;
+                margin-left: 10px;
+                &:hover{
+                    color: orangered;
+                }
+            }
+            grid-template-areas: logo;
+        }
+        div{
+            width: 100%;
+            p{
+               width: 80%;
+               margin-left: 10%;
+                color: white;
+                font-size: 0.7rem;
+            }
+            grid-template-areas: c;
         }
     }
 }

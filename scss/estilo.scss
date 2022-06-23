@@ -21,7 +21,8 @@ body{
     text-align: center;
     padding: 1rem;
     color: orangered;
-    margin-bottom: 2rem;
+    
+    width: 100%;
 }
 
 .titulogeneral{
@@ -29,23 +30,35 @@ body{
     padding: 1rem;
     font-size: 1.5rem;
     color: orangered;
-    margin-bottom: 2rem;
+    
 }
 
 .cardtitle{
     text-align: center;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: orangered;
-    margin-bottom: 2rem;
+    
 }
  
 button{
     margin-top: 10px;
     padding: 10px;
-    background-color: rgb(0, 156, 156);
+    background-color: rgba(25, 119, 119, 0.514);
+    border-radius: 5px;
+    border-color: orangered;
+    &:hover{
+color: orangered;
+font-weight: bolder;
+
+
+    }
+}
+
+.br{
     border-radius: 5px;
 }
+
 
 
 

@@ -113,41 +113,51 @@ main img {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card; }
     .cards11 .card11 img {
-      width: 200px; }
+      width: 100%;
+      border-radius: 10px; }
       .cards11 .card11 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards11 .card22 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card1; }
     .cards11 .card22 img {
-      width: 200px; }
+      width: 100%;
+      border-radius: 10px; }
       .cards11 .card22 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards11 .card33 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card2; }
     .cards11 .card33 img {
-      width: 200px; }
+      width: 100%;
+      border-radius: 10px; }
       .cards11 .card33 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
+
+.img1 {
+  width: 100%;
+  height: 350px; }
 
 @media screen and (max-width: 320px) {
   .cards11 {
@@ -161,21 +171,58 @@ main img {
     width: 100%;
     padding-bottom: 1rem; }
   .img1 {
-    height: 151px; } }
+    width: 100%;
+    height: 100px; } }
 
 .foot {
-  display: grid;
+  display: flex;
   width: 100%;
-  justify-content: center;
   padding: 2rem 0px;
   background-color: gray; }
   .foot .logos {
-    margin-top: 1rem; }
+    width: 30%;
+    margin-left: 20%; }
     .foot .logos .logo {
-      padding: 0.3rem;
-      background-color: #44bbdf;
+      padding: 0.5rem;
+      background-color: rgba(30, 148, 148, 0.514);
       border-radius: 5px;
-      color: white; }
+      color: white;
+      margin-left: 10px; }
+      .foot .logos .logo:hover {
+        color: orangered; }
+  .foot div p {
+    color: white;
+    width: 100%; }
+
+@media screen and (max-width: 320px) {
+  .foot {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logo"  "c";
+    width: 100%;
+    row-gap: 2rem;
+    background-color: gray; }
+    .foot .logos {
+      display: flex;
+      width: 100%;
+      grid-template-areas: logo; }
+      .foot .logos .logo {
+        padding: 0.5rem;
+        background-color: rgba(30, 148, 148, 0.514);
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px; }
+        .foot .logos .logo:hover {
+          color: orangered; }
+    .foot div {
+      width: 100%;
+      grid-template-areas: c; }
+      .foot div p {
+        width: 80%;
+        margin-left: 10%;
+        color: white;
+        font-size: 0.7rem; } }
 
 h2 {
   font-size: 2rem; }
@@ -191,43 +238,49 @@ h3 {
   text-align: center;
   justify-content: center;
   margin-left: 3.5rem;
-  padding-bottom: 6rem; }
+  padding: 1rem; }
   .cards .card {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card; }
     .cards .card img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards .card img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards .card1 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card1; }
     .cards .card1 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards .card1 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards .card2 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card2; }
     .cards .card2 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards .card2 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
 
 .cards1 {
   display: grid;
@@ -237,43 +290,49 @@ h3 {
   text-align: center;
   justify-content: center;
   margin-left: 3.5rem;
-  padding-bottom: 6rem; }
+  padding: 1rem; }
   .cards1 .card3 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card3; }
     .cards1 .card3 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards1 .card3 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards1 .card4 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card4; }
     .cards1 .card4 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards1 .card4 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards1 .card5 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card5; }
     .cards1 .card5 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards1 .card5 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
 
 .cards2 {
   display: grid;
@@ -288,38 +347,44 @@ h3 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card6; }
     .cards2 .card6 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards2 .card6 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards2 .card7 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card7; }
     .cards2 .card7 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards2 .card7 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
   .cards2 .card8 {
     line-height: 25px;
     width: 300px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-template-areas: card8; }
     .cards2 .card8 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards2 .card8 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
 
 @media screen and (max-width: 320px) {
   .cards {
@@ -363,46 +428,53 @@ h3 {
   grid-template-areas: "card111 card222 card333";
   text-align: center;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 4rem; }
   .cards111 .card111 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card111; }
     .cards111 .card111 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards111 .card111 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 10px; }
   .cards111 .card222 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card222; }
     .cards111 .card222 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards111 .card222 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 10px; }
   .cards111 .card333 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card333; }
     .cards111 .card333 img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 10px; }
       .cards111 .card333 img:hover {
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 10px; }
 
 @media screen and (max-width: 320px) {
   .cards111 {
@@ -427,7 +499,7 @@ h3 {
   .formularios form div .formcontacto1 {
     width: 250px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
@@ -436,7 +508,7 @@ h3 {
   .formularios .formcontacto2 {
     width: 250px;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
@@ -455,7 +527,7 @@ h3 {
     .formularios form div .formcontacto1 {
       width: 80%;
       padding: 1rem;
-      background-color: aqua;
+      background-color: rgba(30, 148, 148, 0.514);
       border-radius: 15px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       text-align: center;
@@ -465,7 +537,7 @@ h3 {
     .formularios .formcontacto2 {
       width: 80%;
       padding: 1rem;
-      background-color: aqua;
+      background-color: rgba(30, 148, 148, 0.514);
       border-radius: 15px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       text-align: center;
@@ -478,7 +550,7 @@ h3 {
     margin-top: 3rem;
     width: 32%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgba(30, 148, 148, 0.514);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
@@ -492,7 +564,7 @@ h3 {
     .contactodiv .form3 {
       margin-top: 3rem;
       width: 80%;
-      background-color: aqua;
+      background-color: rgba(30, 148, 148, 0.514);
       border-radius: 15px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       text-align: center;
@@ -503,24 +575,29 @@ h3 {
   text-align: center;
   padding: 1rem;
   color: orangered;
-  margin-bottom: 2rem; }
+  width: 100%; }
 
 .titulogeneral {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  color: orangered;
-  margin-bottom: 2rem; }
+  color: orangered; }
 
 .cardtitle {
   text-align: center;
   padding: 1rem;
-  font-size: 1.5rem;
-  color: orangered;
-  margin-bottom: 2rem; }
+  font-size: 1rem;
+  color: orangered; }
 
 button {
   margin-top: 10px;
   padding: 10px;
-  background-color: #009c9c;
+  background-color: rgba(25, 119, 119, 0.514);
+  border-radius: 5px;
+  border-color: orangered; }
+  button:hover {
+    color: orangered;
+    font-weight: bolder; }
+
+.br {
   border-radius: 5px; }
