@@ -1,16 +1,27 @@
 .foot{
-    display: flex;
-    width: 100%;
-    padding: 2rem 0px;
-    background-color: gray;
-    .logos{
-        width: 30%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas:
+    "logos copy lista"
+    ;
+    text-align: center;
+    justify-content: center;
+   width: 100%;
+   
+   background-color: rgb(177, 204, 234);
+   padding-top: 3rem;
+    .logos{display: flex;
+        width: 50%;
+        height: 40%;
         margin-left: 20%;
+        grid-template-areas: logos;
         
         .logo{
              
-            padding: 0.5rem;
-            background-color: rgba(30, 148, 148, 0.514);
+            padding: 0.7rem;
+            background-color: $blue-color;
             border-radius: 5px;
             color: white;
             margin-left: 10px;
@@ -19,55 +30,93 @@
             }
         }
     }
-    div{
+    .div{
         p{
            
             color: white;
             width: 100%;
+            grid-template-areas: copy;
         }
     }
+    
+    .ulfooter{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 10%;
+    
+    a{
+        text-decoration: none;
+    }
+    grid-template-areas: lista;
+    padding-bottom: 2rem;
+}
 }
 
-@media screen and (max-width: 320px){
+
+
+@media screen and (max-width: 576px){
 
     .foot{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "logo" 
-        "c" 
+        "logos lista"
+
+        "copy copy" 
         ;
         width: 100%;
         row-gap: 2rem;
-        background-color: gray;
+        background-color: rgb(177, 204, 234);
         .logos{
-            display: flex;
-            width: 100%;
+            width: 50%;
+           display: flex;
             
+            margin-right: 25%;
+            grid-template-areas: logos;
             
             .logo{
                  
-                padding: 0.5rem;
-                background-color: rgba(30, 148, 148, 0.514);
+                padding: 0.7rem;
+                background-color: $blue-color;
                 border-radius: 5px;
                 color: white;
-                margin-left: 10px;
+                
                 &:hover{
                     color: orangered;
                 }
+                
+              
             }
-            grid-template-areas: logo;
-        }
-        div{
-            width: 100%;
+        
+        .div{
             p{
-               width: 80%;
-               margin-left: 10%;
+               
                 color: white;
-                font-size: 0.7rem;
+                width: 100%;
+                grid-template-areas: copy;
             }
-            grid-template-areas: c;
+            width: 80%;
+            
+            margin-right: 10%;
         }
+        
+        .ulfooter{
+        list-style-type: none;
+        text-align: right;
+        width: 100%;
+        margin-left: 30%;
+        margin-right: 30%;
+       
+        
+        a{
+            text-decoration: none;
+            
+        }
+        grid-template-areas: lista;
+        padding-bottom: 2rem;
+    }
+    
+}
     }
 }

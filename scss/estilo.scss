@@ -5,8 +5,11 @@
 }
 
 body{
-    font-family: fantasy
+    font-family: fantasy;
 }
+
+$blue-color:rgb(0, 136, 255) ;
+
 
 @import "header";
 @import "main";
@@ -17,19 +20,25 @@ body{
 @import "iniciosesion";
 @import "contacto";
 
+
 .titulo{
     text-align: center;
     padding: 1rem;
-    color: orangered;
+    color: $blue-color;
     
     width: 100%;
+}
+
+main{
+    margin-top: 1rem;
 }
 
 .titulogeneral{
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    color: orangered;
+    color: $blue-color;
+    padding-bottom: 0;
     
 }
 
@@ -37,26 +46,30 @@ body{
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
-    color: orangered;
+    color:$blue-color;
     
 }
  
 button{
     margin-top: 10px;
     padding: 10px;
-    background-color: rgba(25, 119, 119, 0.514);
+    background-color: white;
     border-radius: 5px;
-    border-color: orangered;
+    border-color: $blue-color;
     &:hover{
-color: orangered;
-font-weight: bolder;
-
-
-    }
+color: $blue-color;
+font-weight: bolder;}
 }
 
 .br{
     border-radius: 5px;
+}
+
+.hovertitle{
+    &:hover{
+        color: rgb(0, 136, 255) ;
+font-weight: bolder;
+    }
 }
 
 

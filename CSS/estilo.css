@@ -50,7 +50,13 @@ header .nav {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(5, 2rem);
-      grid-template-areas: "btn1  btn2 btn3 btn4 btn5";
+      grid-template-areas: "
+      btn1 
+ btn2
+ btn3
+ btn4
+ btn5"
+ ;
       justify-content: center;
       text-align: center; }
       header .nav .menu .boton1 {
@@ -113,116 +119,150 @@ main img {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card; }
     .cards11 .card11 img {
       width: 100%;
-      border-radius: 10px; }
+      border-radius: 5px; }
       .cards11 .card11 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards11 .card22 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card1; }
     .cards11 .card22 img {
       width: 100%;
-      border-radius: 10px; }
+      border-radius: 5px; }
       .cards11 .card22 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards11 .card33 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
     grid-template-areas: card2; }
     .cards11 .card33 img {
       width: 100%;
-      border-radius: 10px; }
+      border-radius: 5px; }
       .cards11 .card33 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
 
 .img1 {
   width: 100%;
   height: 350px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .cards11 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card"  "card1"  "card2";
+    grid-template-areas: "card" 
+ "card1" 
+ "card2";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     padding-bottom: 1rem; }
   .img1 {
-    width: 100%;
-    height: 100px; } }
+    width: 25%;
+    height: 60%; } }
 
 .foot {
-  display: flex;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: "logos copy lista";
+  text-align: center;
+  justify-content: center;
   width: 100%;
-  padding: 2rem 0px;
-  background-color: gray; }
+  background-color: #b1ccea;
+  padding-top: 3rem; }
   .foot .logos {
-    width: 30%;
-    margin-left: 20%; }
+    display: flex;
+    width: 50%;
+    height: 40%;
+    margin-left: 20%;
+    grid-template-areas: logos; }
     .foot .logos .logo {
-      padding: 0.5rem;
-      background-color: rgba(30, 148, 148, 0.514);
+      padding: 0.7rem;
+      background-color: #0088ff;
       border-radius: 5px;
       color: white;
       margin-left: 10px; }
       .foot .logos .logo:hover {
         color: orangered; }
-  .foot div p {
+  .foot .div p {
     color: white;
-    width: 100%; }
+    width: 100%;
+    grid-template-areas: copy; }
+  .foot .ulfooter {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 10%;
+    grid-template-areas: lista;
+    padding-bottom: 2rem; }
+    .foot .ulfooter a {
+      text-decoration: none; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .foot {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logo"  "c";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logos lista"
+  "copy copy";
     width: 100%;
     row-gap: 2rem;
-    background-color: gray; }
+    background-color: #b1ccea; }
     .foot .logos {
+      width: 50%;
       display: flex;
-      width: 100%;
-      grid-template-areas: logo; }
+      margin-right: 25%;
+      grid-template-areas: logos; }
       .foot .logos .logo {
-        padding: 0.5rem;
-        background-color: rgba(30, 148, 148, 0.514);
+        padding: 0.7rem;
+        background-color: #0088ff;
         border-radius: 5px;
-        color: white;
-        margin-left: 10px; }
+        color: white; }
         .foot .logos .logo:hover {
           color: orangered; }
-    .foot div {
-      width: 100%;
-      grid-template-areas: c; }
-      .foot div p {
+      .foot .logos .div {
         width: 80%;
-        margin-left: 10%;
-        color: white;
-        font-size: 0.7rem; } }
+        margin-right: 10%; }
+        .foot .logos .div p {
+          color: white;
+          width: 100%;
+          grid-template-areas: copy; }
+      .foot .logos .ulfooter {
+        list-style-type: none;
+        text-align: right;
+        width: 100%;
+        margin-left: 30%;
+        margin-right: 30%;
+        grid-template-areas: lista;
+        padding-bottom: 2rem; }
+        .foot .logos .ulfooter a {
+          text-decoration: none; } }
 
 h2 {
   font-size: 2rem; }
@@ -234,53 +274,58 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1fr);
-  grid-template-areas: "card card1 card2";
+  grid-template-areas: "card1111 card1 card2";
   text-align: center;
   justify-content: center;
-  margin-left: 3.5rem;
   padding: 1rem; }
-  .cards .card {
+  .cards .card1111 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card; }
-    .cards .card img {
-      width: 200px;
-      border-radius: 10px; }
-      .cards .card img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+    .cards .card1111 img {
+      width: 100%;
+      border-radius: 5px; }
+      .cards .card1111 img:hover {
+        padding: 0.3rem; }
   .cards .card1 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card1; }
     .cards .card1 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards .card1 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards .card2 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card2; }
     .cards .card2 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards .card2 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
 
 .cards1 {
   display: grid;
@@ -289,50 +334,55 @@ h3 {
   grid-template-areas: "card3 card4 card5";
   text-align: center;
   justify-content: center;
-  margin-left: 3.5rem;
   padding: 1rem; }
   .cards1 .card3 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card3; }
     .cards1 .card3 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards1 .card3 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards1 .card4 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card4; }
     .cards1 .card4 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards1 .card4 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards1 .card5 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card5; }
     .cards1 .card5 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards1 .card5 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
 
 .cards2 {
   display: grid;
@@ -341,57 +391,65 @@ h3 {
   grid-template-areas: "card6 card7 card8";
   text-align: center;
   justify-content: center;
-  margin-left: 3.5rem;
+  padding: 1rem;
   padding-bottom: 6rem; }
   .cards2 .card6 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card6; }
     .cards2 .card6 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards2 .card6 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards2 .card7 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card7; }
     .cards2 .card7 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards2 .card7 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
   .cards2 .card8 {
     line-height: 25px;
-    width: 300px;
+    width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    margin-left: 10%;
     grid-template-areas: card8; }
     .cards2 .card8 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards2 .card8 img:hover {
-        padding: 1rem;
-        border-radius: 5px; }
+        padding: 0.3rem; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card"  "card1"  "card2";
+    grid-template-areas: "card1111" 
+ "card1" 
+ "card2";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -402,7 +460,9 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card3"  "card4"  "card5";
+    grid-template-areas: "card3" 
+ "card4" 
+ "card5";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -413,7 +473,9 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card6"  "card7"  "card8";
+    grid-template-areas: "card6" 
+ "card7" 
+ "card8";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -434,54 +496,62 @@ h3 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
+    margin-top: 2rem;
     grid-template-areas: card111; }
     .cards111 .card111 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards111 .card111 img:hover {
-        padding: 1rem;
-        border-radius: 10px; }
+        padding: 0.3rem; }
   .cards111 .card222 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
+    margin-top: 2rem;
     grid-template-areas: card222; }
     .cards111 .card222 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards111 .card222 img:hover {
-        padding: 1rem;
-        border-radius: 10px; }
+        padding: 0.3rem; }
   .cards111 .card333 {
     line-height: 25px;
     width: 80%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     margin-left: 10%;
+    margin-top: 2rem;
     grid-template-areas: card333; }
     .cards111 .card333 img {
-      width: 200px;
-      border-radius: 10px; }
+      width: 100%;
+      border-radius: 5px; }
       .cards111 .card333 img:hover {
-        padding: 1rem;
-        border-radius: 10px; }
+        padding: 0.3rem; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .cards111 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card111"  "card222"  "card333";
+    grid-template-areas: "card111" 
+ "card222" 
+ "card333";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -521,7 +591,8 @@ h3 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2, 1fr;
-    grid-template-areas: "form1"  "form2";
+    grid-template-areas: "form1" 
+ "form2";
     justify-content: center;
     margin-bottom: 4rem; }
     .formularios form div .formcontacto1 {
@@ -547,18 +618,37 @@ h3 {
 .contactodiv {
   width: 100%; }
   .contactodiv .form3 {
-    margin-top: 3rem;
-    width: 32%;
+    line-height: 30px;
+    width: 40%;
+    margin-left: 30%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
-    margin-bottom: 4rem;
-    align-items: center;
-    margin-left: 34%; }
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+    text-align: center; }
+    .contactodiv .form3 input {
+      width: 90%;
+      margin-left: 5%; }
+    .contactodiv .form3 textarea {
+      width: 90%;
+      margin-left: 5%; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1000px) {
+  .contactodiv {
+    width: 100%; }
+    .contactodiv .form3 {
+      margin-top: 3rem;
+      width: 60%;
+      margin-left: 20%;
+      background-color: rgba(30, 148, 148, 0.514);
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-align: center;
+      margin-bottom: 4rem; } }
+
+@media screen and (max-width: 576px) {
   .contactodiv {
     width: 100%; }
     .contactodiv .form3 {
@@ -574,30 +664,38 @@ h3 {
 .titulo, h2 {
   text-align: center;
   padding: 1rem;
-  color: orangered;
+  color: #0088ff;
   width: 100%; }
+
+main {
+  margin-top: 1rem; }
 
 .titulogeneral {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  color: orangered; }
+  color: #0088ff;
+  padding-bottom: 0; }
 
 .cardtitle {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
-  color: orangered; }
+  color: #0088ff; }
 
 button {
   margin-top: 10px;
   padding: 10px;
-  background-color: rgba(25, 119, 119, 0.514);
+  background-color: white;
   border-radius: 5px;
-  border-color: orangered; }
+  border-color: #0088ff; }
   button:hover {
-    color: orangered;
+    color: #0088ff;
     font-weight: bolder; }
 
 .br {
   border-radius: 5px; }
+
+.hovertitle:hover {
+  color: #0088ff;
+  font-weight: bolder; }

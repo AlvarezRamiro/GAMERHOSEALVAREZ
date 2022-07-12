@@ -1,19 +1,24 @@
 
 @mixin cardproductos {
     line-height: 25px;
-        img{
-            width: 200px;
-            border-radius: 10px;
-            &:hover{
-                padding: 1rem;
+            img{
+                width: 100%;
                 border-radius: 5px;
+                &:hover{
+                    padding: 0.3rem;
+                    
+                  
+                    
+                }
             }
-        }
-        width: 300px;
-        padding: 1rem;
-        background-color: rgba(30, 148, 148, 0.514);
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 80%;
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            margin-left: 10%;
 }
 
 h2{
@@ -30,16 +35,16 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1fr);
     grid-template-areas:
-    "card card1 card2"
+    "card1111 card1 card2"
     ;
     text-align: center;
     justify-content: center;
-    margin-left: 3.5rem;
+   
     padding: 1rem;
     
     
     
-        .card{
+        .card1111{
             @include cardproductos;
             grid-template-areas: card;
             }
@@ -63,7 +68,7 @@ h3{
             ;
             text-align: center;
             justify-content: center;
-            margin-left: 3.5rem;
+            
             padding: 1rem;
             
                 .card3{
@@ -89,7 +94,7 @@ h3{
                     ;
                     text-align: center;
                     justify-content: center;
-                    margin-left: 3.5rem;
+                  padding: 1rem;
                     padding-bottom: 6rem;
                     
                         .card6{
@@ -106,13 +111,13 @@ h3{
                             }
                         }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 576px){
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-        "card" 
+        "card1111" 
         "card1" 
         "card2"
         ;

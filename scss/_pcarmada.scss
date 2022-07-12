@@ -12,20 +12,25 @@
     
     @mixin cardpcarmada {
         line-height: 25px;
-            img{
-                width: 200px;
-                border-radius: 10px;
-                &:hover{
-                    padding: 1rem;
-                    border-radius: 10px;
-                }
+        img{
+            width: 100%;
+            border-radius: 5px;
+            &:hover{
+                padding: 0.3rem;
+                
+              
+                
             }
-            width: 80%;
-            padding: 1rem;
-            background-color: rgba(30, 148, 148, 0.514);
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            margin-left: 10%;
+        }
+        width: 80%;
+        padding: 1rem;
+        border-width: 1rem;
+        border-style: initial;
+        border-color: aqua;
+        border-radius: 5px;
+        box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+        margin-left: 10%;
+        margin-top: 2rem;
     }
         .card111{
             @include cardpcarmada;
@@ -42,7 +47,7 @@
         }
 
 
-        @media screen and (max-width: 320px){
+        @media screen and (max-width: 576px){
             .cards111{
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);

@@ -5,36 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta name="description" content="Aqui el usuario podrá registrarse e iniciar sesion en su cuenta personal">
-    <meta name="keywords" content="Gamer, computadora, gaming, procesadres, perifericos, juegos, pc,">
-
-    <meta>
-    <title>Gamer House</title>
+<link rel="stylesheet" href="../CSS/estilo.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="description" content="Gamerhouse es el sitio perfecto para adquirir todos los productos relacionados con la informatica y el gaming que estas necesitando">
+<meta name="keywords" content="Gamer, computadora, gaming, procesadres, perifericos, juegos, pc,">
+    <title>GamerHouse Sass</title>
 </head>
 
-<body>
-    <div class="e">
+    <body>
         <header>
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="boton1"><a href="../index.html">Home</a></li>
-                    <li class="boton2"><a href="../Pages/Productos.html">Productos</a></li>
-                    <li class="boton3"><a href="../Pages/PCarmadas.html">PC armadas</a></li>
-                    <li class="boton4"><a href="./InicioSesion.html">Iniciar Sesión</a></li>
-                    <li class="boton5"><a href="../Pages/Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img class="w-50" src="../Fotos/logo22.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link hovertitle" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hovertitle" href="../Pages/Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hovertitle" href="../Pages/PCarmadas.html">PC armadas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hovertitle" href="../Pages/InicioSesion.html">Iniciar Sesión</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hovertitle" href="../Pages/Contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
     </div>
     <div class="titulogeneral">INICIAR SESIÓN</div>
    
-    <section class="formularios">
+    <section class="formularios" >
         <form action="#" >
             <div >
-                <div class="formcontacto1">
+                <div class="formcontacto1" data-aos="fade-up-right">
                 <h2 id="tmap" class="cardtitle">Inicio de sesion</h2>
                 <label for="mail">Mail</label>
                 <input type="email" name="" id="" required class="br">
@@ -44,7 +60,7 @@
                 </div>
             </div>
         </form>
-        <form action="#" id="registro" >
+        <form action="#" id="registro" data-aos="fade-up-left">
             <div >
                 <div class="formcontacto2">
                 <h2 id="tmap" class="cardtitle">Registrarme</h2>
@@ -77,19 +93,30 @@
     </section>
         
         
-        <footer class="foot">
+    <footer class="foot">
              
-            <div class="logos"> 
-                <a class="logo" target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a> 
-                <a class="logo" target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a class="logo" target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                <a class="logo" target="_blank" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>      
-            </div> 
-            <div>
-                <p>
-                    Alvarez Ramiro © Todos los derechos reservados
-                </p>
-            </div>
-    </footer>
+        <div class="logos"> 
+            <a class="logo" target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a> 
+            <a class="logo" target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a class="logo" target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a class="logo" target="_blank" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>      
+        </div> 
+        <div>
+            <p>
+                Alvarez Ramiro © Todos los derechos reservados
+            </p>
+        </div>
+        <ul class="ulfooter">
+          <li><a href="">Trabaja con nosotros</a></li>
+          <li><a href="">Ayuda</a></li>
+          <li><a href="">Contactános</a></li>
+        </ul>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
