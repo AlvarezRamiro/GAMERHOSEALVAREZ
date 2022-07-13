@@ -1,43 +1,77 @@
 .formularios{
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "form1 form2";
     justify-content: center;
     margin-bottom: 4rem;
-    margin-left: 20%;
+   
     form{
         div{
             .formcontacto1{
-                width: 250px;
-    padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
-    line-height: 2rem;
+                line-height: 30px;
+                width: 70%;
+                    padding: 1rem;
+                    border-width: 1rem;
+                    border-style: initial;
+                    border-color: aqua;
+                    border-radius: 5px;
+                    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+                    text-align: center;
+                    margin-left: 15%;
     grid-area:from1 ;
+    input{
+        width: 90%;
+        margin-left: 5%;
+    }
+    button{
+        margin-top: 2rem;
+    }
+         margin-bottom: 2rem;  
+         margin-top: 2rem;  
    
                
             }
         }
     }
     .formcontacto2{
-        width: 250px;
-    padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
-    line-height: 1.5rem;
+        line-height: 30px;
+        width: 70%;
+        
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            text-align: center;
+            margin-left: 15%;
+            input{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .lbf{
+                width: 20%;
+                margin-left: 25%;
+                
+            }
+            
+            button{
+                margin-top: 2rem;
+            }
+            select{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+                 margin-bottom: 2rem;  
+                 margin-top: 2rem;  
    
 grid-area:form2 ;
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 576px){
     .formularios{
-        margin-top: 0rem;
         display: grid;
         grid-template-columns:100%;
         grid-template-rows:(2, 1fr);
@@ -46,34 +80,62 @@ grid-area:form2 ;
        "form2";
         justify-content: center;
         margin-bottom: 4rem;
-        
-
+       
 
         form{
             div{
                 .formcontacto1{
-                    width: 80%;
-        padding: 1rem;
-        background-color: rgba(30, 148, 148, 0.514);
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        text-align: center;
-        line-height: 2rem;
+                    line-height: 30px;
+                    width: 70%;
+                    
+                        padding: 1rem;
+                        border-width: 1rem;
+                        border-style: initial;
+                        border-color: aqua;
+                        border-radius: 5px;
+                        box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+                        text-align: center;
         grid-area:from1 ;
-        margin-bottom: 2rem;
-                   
+        input{
+            width: 90%;
+            margin-left: 5%;
+            
+        }
+        button{
+            margin-top: 2rem;
+        }
+             margin-bottom: 2rem;  
+             margin-top: 2rem;    
                 }
             }
         }
         .formcontacto2{
-            width: 80%;
-        padding: 1rem;
-        background-color: rgba(30, 148, 148, 0.514);
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        text-align: center;
-        line-height: 1.5rem;
-    grid-area:form2 ;
+            line-height: 30px;
+        width: 70%;
+        
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            text-align: center;
+            input{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .lbf{
+                width: 50%;
+                text-align: left;
+            }
+            select{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                margin-top: 2rem;
+            }
         }
     }
     

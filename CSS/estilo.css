@@ -50,13 +50,7 @@ header .nav {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(5, 2rem);
-      grid-template-areas: "
-      btn1 
- btn2
- btn3
- btn4
- btn5"
- ;
+      grid-template-areas: "btn1  btn2 btn3 btn4 btn5";
       justify-content: center;
       text-align: center; }
       header .nav .menu .boton1 {
@@ -173,9 +167,7 @@ main img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card" 
- "card1" 
- "card2";
+    grid-template-areas: "card"  "card1"  "card2";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -199,70 +191,72 @@ main img {
   padding-top: 3rem; }
   .foot .logos {
     display: flex;
-    width: 50%;
-    height: 40%;
+    width: 30%;
     margin-left: 20%;
-    grid-template-areas: logos; }
+    grid-template-areas: logos;
+    padding-bottom: 20%; }
     .foot .logos .logo {
-      padding: 0.7rem;
-      background-color: #0088ff;
+      padding: 1rem;
+      background-color: #1656fb;
       border-radius: 5px;
       color: white;
       margin-left: 10px; }
       .foot .logos .logo:hover {
         color: orangered; }
-  .foot .div p {
-    color: white;
-    width: 100%;
+  .foot div p {
+    color: #0088ff;
+    width: 80%;
     grid-template-areas: copy; }
   .foot .ulfooter {
+    width: 100%;
     list-style-type: none;
     text-align: left;
-    margin-left: 10%;
-    grid-template-areas: lista;
-    padding-bottom: 2rem; }
+    grid-template-areas: lista; }
     .foot .ulfooter a {
       text-decoration: none; }
 
 @media screen and (max-width: 576px) {
   .foot {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "logos lista"
-  "copy copy";
-    width: 100%;
-    row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logos " "copy "  "lista";
     background-color: #b1ccea; }
     .foot .logos {
       width: 50%;
       display: flex;
-      margin-right: 25%;
-      grid-template-areas: logos; }
+      grid-template-areas: logos;
+      margin-left: 30%; }
       .foot .logos .logo {
-        padding: 0.7rem;
-        background-color: #0088ff;
+        padding: 0.4rem;
+        width: 2rem;
+        height: 2.2rem;
+        background-color: #1656fb;
         border-radius: 5px;
-        color: white; }
+        color: white;
+        margin-bottom: 0.5rem; }
         .foot .logos .logo:hover {
           color: orangered; }
-      .foot .logos .div {
-        width: 80%;
-        margin-right: 10%; }
-        .foot .logos .div p {
-          color: white;
-          width: 100%;
-          grid-template-areas: copy; }
-      .foot .logos .ulfooter {
-        list-style-type: none;
-        text-align: right;
+    .foot div {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; }
+      .foot div p {
+        color: #0088ff;
         width: 100%;
-        margin-left: 30%;
-        margin-right: 30%;
-        grid-template-areas: lista;
-        padding-bottom: 2rem; }
-        .foot .logos .ulfooter a {
-          text-decoration: none; } }
+        grid-template-areas: copy; }
+    .foot .ulfooter {
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      padding-left: 25%;
+      margin-right: 10%;
+      grid-template-areas: lista;
+      padding-bottom: 1rem; }
+      .foot .ulfooter a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none; } }
 
 h2 {
   font-size: 2rem; }
@@ -447,9 +441,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card1111" 
- "card1" 
- "card2";
+    grid-template-areas: "card1111"  "card1"  "card2";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -460,9 +452,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card3" 
- "card4" 
- "card5";
+    grid-template-areas: "card3"  "card4"  "card5";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -473,9 +463,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card6" 
- "card7" 
- "card8";
+    grid-template-areas: "card6"  "card7"  "card8";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -549,9 +537,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "card111" 
- "card222" 
- "card333";
+    grid-template-areas: "card111"  "card222"  "card333";
     text-align: center;
     justify-content: center;
     row-gap: 1rem;
@@ -559,61 +545,104 @@ h3 {
     padding-bottom: 1rem; } }
 
 .formularios {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "form1 form2";
   justify-content: center;
-  margin-bottom: 4rem;
-  margin-left: 20%; }
+  margin-bottom: 4rem; }
   .formularios form div .formcontacto1 {
-    width: 250px;
+    line-height: 30px;
+    width: 70%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     text-align: center;
-    line-height: 2rem;
-    grid-area: from1; }
+    margin-left: 15%;
+    grid-area: from1;
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+    .formularios form div .formcontacto1 input {
+      width: 90%;
+      margin-left: 5%; }
+    .formularios form div .formcontacto1 button {
+      margin-top: 2rem; }
   .formularios .formcontacto2 {
-    width: 250px;
+    line-height: 30px;
+    width: 70%;
     padding: 1rem;
-    background-color: rgba(30, 148, 148, 0.514);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 1rem;
+    border-style: initial;
+    border-color: aqua;
+    border-radius: 5px;
+    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
     text-align: center;
-    line-height: 1.5rem;
+    margin-left: 15%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     grid-area: form2; }
+    .formularios .formcontacto2 input {
+      width: 90%;
+      margin-left: 5%; }
+    .formularios .formcontacto2 .lbf {
+      width: 20%;
+      margin-left: 25%; }
+    .formularios .formcontacto2 button {
+      margin-top: 2rem; }
+    .formularios .formcontacto2 select {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .formularios {
-    margin-top: 0rem;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2, 1fr;
-    grid-template-areas: "form1" 
- "form2";
+    grid-template-areas: "form1"  "form2";
     justify-content: center;
     margin-bottom: 4rem; }
     .formularios form div .formcontacto1 {
-      width: 80%;
+      line-height: 30px;
+      width: 70%;
       padding: 1rem;
-      background-color: rgba(30, 148, 148, 0.514);
-      border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-width: 1rem;
+      border-style: initial;
+      border-color: aqua;
+      border-radius: 5px;
+      box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
       text-align: center;
-      line-height: 2rem;
       grid-area: from1;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      margin-top: 2rem; }
+      .formularios form div .formcontacto1 input {
+        width: 90%;
+        margin-left: 5%; }
+      .formularios form div .formcontacto1 button {
+        margin-top: 2rem; }
     .formularios .formcontacto2 {
-      width: 80%;
+      line-height: 30px;
+      width: 70%;
       padding: 1rem;
-      background-color: rgba(30, 148, 148, 0.514);
-      border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      text-align: center;
-      line-height: 1.5rem;
-      grid-area: form2; } }
+      border-width: 1rem;
+      border-style: initial;
+      border-color: aqua;
+      border-radius: 5px;
+      box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+      text-align: center; }
+      .formularios .formcontacto2 input {
+        width: 90%;
+        margin-left: 5%; }
+      .formularios .formcontacto2 .lbf {
+        width: 50%;
+        text-align: left; }
+      .formularios .formcontacto2 select {
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+      .formularios .formcontacto2 button {
+        margin-top: 2rem; } }
 
 .contactodiv {
   width: 100%; }
@@ -639,27 +668,43 @@ h3 {
   .contactodiv {
     width: 100%; }
     .contactodiv .form3 {
-      margin-top: 3rem;
+      line-height: 30px;
       width: 60%;
       margin-left: 20%;
-      background-color: rgba(30, 148, 148, 0.514);
-      border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      text-align: center;
-      margin-bottom: 4rem; } }
+      padding: 1rem;
+      border-width: 1rem;
+      border-style: initial;
+      border-color: aqua;
+      border-radius: 5px;
+      box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+      text-align: center; }
+      .contactodiv .form3 input {
+        width: 90%;
+        margin-left: 5%; }
+      .contactodiv .form3 textarea {
+        width: 90%;
+        margin-left: 5%; } }
 
 @media screen and (max-width: 576px) {
   .contactodiv {
     width: 100%; }
     .contactodiv .form3 {
-      margin-top: 3rem;
-      width: 80%;
-      background-color: rgba(30, 148, 148, 0.514);
-      border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      text-align: center;
-      margin-bottom: 4rem;
-      margin-left: 10%; } }
+      line-height: 30px;
+      width: 60%;
+      margin-left: 20%;
+      padding: 1rem;
+      border-width: 1rem;
+      border-style: initial;
+      border-color: aqua;
+      border-radius: 5px;
+      box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+      text-align: center; }
+      .contactodiv .form3 input {
+        width: 90%;
+        margin-left: 5%; }
+      .contactodiv .form3 textarea {
+        width: 90%;
+        margin-left: 5%; } }
 
 .titulo, h2 {
   text-align: center;
